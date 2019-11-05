@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "has-ansi": "^3.0.0",
-    "strip-ansi": "^4.0.0"
+    "strip-ansi": "^5.0.0"
   },
   "devDependencies": {
     "@types/has-ansi": "3.0.0",
