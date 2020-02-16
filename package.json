@@ -21,7 +21,7 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "has-ansi": "^3.0.0",
+    "has-ansi": "^4.0.0",
     "strip-ansi": "^4.0.0"
   },
   "devDependencies": {
