@@ -26,10 +26,10 @@
   },
   "devDependencies": {
     "@types/has-ansi": "3.0.0",
-    "@types/jest": "23.3.14",
+    "@types/jest": "25.1.3",
     "@types/strip-ansi": "3.0.0",
     "chalk": "2.4.2",
-    "jest": "23.6.0",
+    "jest": "25.1.0",
     "prettier": "1.19.1",
     "prettier-config-ikatyang": "1.1.1",
     "standard-version": "4.4.0",
