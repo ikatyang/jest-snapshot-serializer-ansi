@@ -1,9 +1,10 @@
-import hasAnsi = require('has-ansi');
-import stripAnsi = require('strip-ansi');
+import hasAnsi from 'has-ansi'
+import stripAnsi from 'strip-ansi'
 
-const serializer: jest.SnapshotSerializerPlugin = {
-  test: value => typeof value === 'string' && hasAnsi(value),
-  print: (value, serialize) => serialize(stripAnsi(value)),
-};
+export function test(value: any): boolean {
+  return typeof value === 'string' && hasAnsi(value)
+}
 
-export = serializer;
+export function print(value: unknown, serialize: (value: unknown) => string) {
+  return serialize(stripAnsi(value as string))
+}

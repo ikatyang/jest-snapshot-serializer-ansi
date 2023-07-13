@@ -1,8 +1,7 @@
 # jest-snapshot-serializer-ansi
 
 [![npm](https://img.shields.io/npm/v/jest-snapshot-serializer-ansi.svg)](https://www.npmjs.com/package/jest-snapshot-serializer-ansi)
-[![build](https://img.shields.io/travis/ikatyang/jest-snapshot-serializer-ansi/master.svg)](https://travis-ci.com/ikatyang/jest-snapshot-serializer-ansi/builds)
-[![coverage](https://img.shields.io/codecov/c/github/ikatyang/jest-snapshot-serializer-ansi/master.svg)](https://codecov.io/gh/ikatyang/jest-snapshot-serializer-ansi)
+[![build](https://img.shields.io/github/actions/workflow/status/ikatyang/jest-snapshot-serializer-ansi/test.yml)](https://github.com/ikatyang/jest-snapshot-serializer-ansi/actions?query=branch%3Amaster)
 
 jest snapshot serializer for stripping [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
 
@@ -11,40 +10,31 @@ jest snapshot serializer for stripping [ANSI escape codes](https://en.wikipedia.
 ## Install
 
 ```sh
-# using npm
-npm install --save-dev jest-snapshot-serializer-ansi
-
-# using yarn
-yarn add --dev jest-snapshot-serializer-ansi
+npm install jest-snapshot-serializer-ansi
 ```
+
+Note: This package is now pure ESM, you may want to install `jest-snapshot-serializer-ansi@1` if you'd like to use it in CJS environment
 
 ## Usage
 
-In config file:
-
-```json
-{
-  "snapshotSerializers": ["jest-snapshot-serializer-ansi"]
-}
-```
-
-or in test file:
+In setup file or test file:
 
 ```js
-expect.addSnapshotSerializer(require('jest-snapshot-serializer-ansi'));
+import * as serializerAnsi from 'jest-snapshot-serializer-ansi'
+expect.addSnapshotSerializer(serializerAnsi)
 ```
 
 ## Development
 
 ```sh
 # lint
-yarn run lint
+pnpm run lint
 
 # build
-yarn run build
+pnpm run build
 
 # test
-yarn run test
+pnpm run test
 ```
 
 ## License
