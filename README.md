@@ -20,7 +20,7 @@ Note: This package is now pure ESM, you may want to install `jest-snapshot-seria
 In setup file or test file:
 
 ```js
-import * as serializerAnsi from 'jest-snapshot-serializer-ansi'
+import serializerAnsi from 'jest-snapshot-serializer-ansi'
 expect.addSnapshotSerializer(serializerAnsi)
 ```
 

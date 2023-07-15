@@ -8,3 +8,5 @@ export function test(value: any): boolean {
 export function print(value: unknown, serialize: (value: unknown) => string) {
   return serialize(stripAnsi(value as string))
 }
+
+export default { test, print }
