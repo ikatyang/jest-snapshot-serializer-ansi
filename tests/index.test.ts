@@ -1,6 +1,6 @@
 import { Chalk } from 'chalk'
 import { expect, test } from 'vitest'
-import * as serializer from '../src/index.js'
+import serializer from '../src/index.js'
 
 const chalk = new Chalk({ level: 1 }) // force color in CI
 
